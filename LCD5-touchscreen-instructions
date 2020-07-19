@@ -1,3 +1,5 @@
+## Manual Instructions
+
 sudo apt-get install xserver-xorg-input-evdev
 
 Append the below to /boot/config.txt
