@@ -23,7 +23,7 @@ display_rotate=0
 ```
 sudo cp -rf /usr/share/X11/xorg.conf.d/10-evdev.conf /usr/share/X11/xorg.conf.d/45-evdev.conf
 
-Add to 45-edev.conf
+Add to 45-evdev.conf
 ```
 Section "InputClass"
 	Identifier "evdev touchscreen catchall"
