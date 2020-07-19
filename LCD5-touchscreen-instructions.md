@@ -12,7 +12,8 @@ hdmi_drive=1
 disable_overscan=0
 hdmi_force_hotplug=1
 config_hdmi_boost=7
-dtoverlay=ads7846,cs=1,penirq=25,penirq_pull=2,speed=50000,keep_vref_on=0,pmax=255,xohms=150display_rotate=0
+dtoverlay=ads7846,cs=1,penirq=25,penirq_pull=2,speed=50000,keep_vref_on=0,pmax=255,xohms=150
+display_rotate=0
 ```
 sudo cp -rf /usr/share/X11/xorg.conf.d/10-evdev.conf /usr/share/X11/xorg.conf.d/45-evdev.conf
 
