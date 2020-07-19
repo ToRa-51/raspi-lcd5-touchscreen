@@ -13,7 +13,16 @@ config_hdmi_boost=7
 dtoverlay=ads7846,cs=1,penirq=25,penirq_pull=2,speed=50000,keep_vref_on=0,pmax=255,xohms=150display_rotate=0
 
 sudo cp -rf /usr/share/X11/xorg.conf.d/10-evdev.conf /usr/share/X11/xorg.conf.d/45-evdev.conf
-sudo reboot
+
+Add to 45-edev.conf
+
+Section "InputClass"
+	Identifier "evdev touchscreen catchall"
+	MatchIsTouchscreen "on"
+	MatchDevicePath "/dev/input/event*"
+	Driver "evdev"
+EndSection
+
 
 Edit or create
 /ect/X11/xorg.conf.d/99-calibration.conf
@@ -24,3 +33,4 @@ Section "InputClass"
   Option  "Calibration" "280 3905 288 3910"
   Option  "SwapAxes"  "0"
 EndSection
+
