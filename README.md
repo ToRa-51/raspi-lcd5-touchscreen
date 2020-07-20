@@ -34,7 +34,7 @@ EndSection
 ```
 
 Edit or create
-/ect/X11/xorg.conf.d/99-calibration.conf
+/usr/share/X11/xorg.conf.d/99-calibration.conf
 ```
 Section "InputClass"
   Identifier  "calibration"
